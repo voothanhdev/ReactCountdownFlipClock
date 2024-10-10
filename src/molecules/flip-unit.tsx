@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { convertDigitText, getNextDigit } from '@/utilities';
-import { ITimeUnit } from '@/@type/time-unit.interface';
+import { convertDigitText, getNextDigit } from '@app/utilities';
+import { ITimeUnit } from '@app/@type/time-unit.interface';
 
 export const FlipUnitContainer: FC<ITimeUnit> = ({ digit, shuffle, unit, title, ...attributes }) => {
     const digitTxt = convertDigitText(digit);

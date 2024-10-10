@@ -1,4 +1,4 @@
-import {TimeUnit} from "./timer.interface";
+import {TimeUnit} from "@app/@type/timer.interface";
 
 export interface ITimeLeftState {
     [TimeUnit.Years]: number;

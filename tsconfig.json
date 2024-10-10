@@ -11,8 +11,7 @@
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "paths": {
-            "@/*": ["./src/*"],
-            "@molecules/*": ["./src/molecules/*"],
+            "@app/*": ["./src/*"],
         }
     },
     "include": ["src"],

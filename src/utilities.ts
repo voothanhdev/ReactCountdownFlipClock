@@ -1,4 +1,4 @@
-import {TimeUnit} from "@/@type";
+import {TimeUnit} from "@app/@type";
 
 export const getNextDigit = (digit, unit) => {
     let result = digit + 1;

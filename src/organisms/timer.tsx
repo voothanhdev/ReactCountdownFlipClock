@@ -1,8 +1,8 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
-import { IShuffleState, ITimeLeftState, ITimerProp, TimeUnit } from './@type';
-import { DEFAULT_SHUFFLE, DEFAULT_TIME_LEFT, DEFAULT_TITLE } from './constants';
-import { FlipUnitContainer } from '@molecules/flip-unit';
-import './style.scss';
+import { IShuffleState, ITimeLeftState, ITimerProp, TimeUnit } from '@app/@type';
+import { DEFAULT_SHUFFLE, DEFAULT_TIME_LEFT, DEFAULT_TITLE } from '@app/constants';
+import { FlipUnitContainer } from '@app/molecules';
+import '../style.scss';
 
 export const Timer: FC<ITimerProp> = ({
     target,
@@ -111,7 +111,7 @@ export const Timer: FC<ITimerProp> = ({
     }, []);
 
     useEffect(() => {
-        timerRef.current = setInterval(updateTimeLeft, 50);
+        timerRef.current = window.setInterval(updateTimeLeft, 50);
 
         return () => clearTimer();
     }, [target]);
